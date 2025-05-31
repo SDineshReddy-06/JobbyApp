@@ -1,0 +1,131 @@
+.job-content{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.profile{
+    background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+    background-size: cover;
+    border-radius: 20px;
+    width: 80%;
+    margin: 30px;
+    min-height:170px ;
+    padding: 10px;
+}
+
+.profile h3{
+    color: blueviolet;
+    margin-bottom: 5px;
+}
+
+.profile p{
+    color:black;
+}
+
+.profile-pic{
+    width: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+
+}
+.side-bar{
+    width:30% ;
+}
+.employment-box {
+  color: white;
+  padding: 20px;
+  width: 240px;
+  margin-left: 20px;
+}
+
+.employment-box h4 {
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+.salary-box {
+
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 240px;
+  margin-left: 20px;
+
+}
+
+.salary-box h4 {
+  margin-bottom: 16px;
+  font-weight: normal;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.radio-label input[type="radio"] {
+
+  width: 18px;
+  height: 18px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    margin-left: 10px;
+}
+
+.searchbar{
+    display: flex;
+    height: 40px;
+    margin: 20px;
+}
+
+button{
+    width: 80px;
+    color: white;
+    background-color: black;
+    font-size:15px ;
+    border-radius: 0px;
+    align-self: center;
+    height: 30px;
+    text-align: center;
+    border-color: white;
+    
+    
+}
+input[type="search"]{
+    width: 40%;
+    align-self:center;
+    
+    
+}
+
+.job-list{
+  height: 100vh;
+  overflow-y: auto;
+}

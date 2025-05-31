@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+img{
+    margin: 10px;
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+}
+.job-item {
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    margin-bottom: 30px;
+}
+.logo-part{
+    display: flex;
+
+}
+.name-rate{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.loc-pack{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.package{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+    margin: 0px;
+}
+.rating{
+    display: flex;
+    padding: 0px;
+    width: 50px;
+    color: yellow;
+    
+}
+.description{
+    margin-top: 20px;
+    margin-left: 10px;
+    color: rgb(204, 204, 204);
+}
+.loc-emp{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.location{
+    display: flex;
+    width: 150px;
+}
+.employment-type{
+    display: flex;
+    width: 150px;
+}
