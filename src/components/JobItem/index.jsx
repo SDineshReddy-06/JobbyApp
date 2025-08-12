@@ -1,13 +1,17 @@
 import './index.css'
-import { IoLocationSharp } from "react-icons/io5";
-import { FaBriefcase } from "react-icons/fa";
+import { useNavigate } from 'react-router-dom';
 
 
 const JobItem = props => {
     const {jobData} = props
     const {title,logo,location,employmentType,packagePerAnnum,rating,description} = jobData
+    const navigate = useNavigate();
+    const jobSelected = () => {
+        navigate(`/jobs/${jobData.id}`)
+    }
+
     return(
-        <div className='job-item'>
+        <div className='job-item' onClick={jobSelected}>
             <div className='logo-part'>
                 <img src={logo}></img>
                 <div className='name-rate'>
@@ -21,16 +25,16 @@ const JobItem = props => {
             <div className='loc-pack'>
                 <div className='loc-emp'>
                     <div className='location'>
-                        <IoLocationSharp />
-                        <p>{location}</p>
+                        {/* <IoLocationSharp /> */}
+                        <span>{location}</span>
                     </div>
                     <div className='employment-type'>
-                        <FaBriefcase />
-                        <p>{employmentType}</p>
+                        {/* <FaBriefcase /> */}
+                        <span>{employmentType}</span>
                     </div>
-                </div>
-                <div className='package'>
-                    <span>{packagePerAnnum}</span>
+                    <div className='package'>
+                        <span>{packagePerAnnum}</span>
+                    </div>
                 </div>
             </div>
             <hr></hr>

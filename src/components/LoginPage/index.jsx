@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import {useNavigate, Navigate} from 'react-router'
+import {useNavigate} from 'react-router'
 import Cookies from 'js-cookie'
 
 import './index.css'
@@ -26,7 +26,7 @@ const LoginPage = () => {
         }
         const response = await fetch(url, options)  
         const data = await response.json()
-        if (response.ok) {
+        if (data.jwt_token != undefined) {
             Cookies.set('jwt_token', data.jwt_token, {expires: 30})
             navigate('/', {replace: true})
         } else {
@@ -37,7 +37,7 @@ const LoginPage = () => {
     }
     const jwtToken = Cookies.get('jwt_token')
     if (jwtToken !== undefined) {
-        return <Navigate to="/" replace />
+        navigate('/login', {replace:true})
     }
 
     return (

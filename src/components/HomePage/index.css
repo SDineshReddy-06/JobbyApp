@@ -1,9 +1,13 @@
+body{
+    overflow: hidden;
+}
 .find-jobs-button{
     background-color: #5f0eda;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     width: 200px;
+    height: auto;
 }
 .home-content{
     background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png');

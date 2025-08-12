@@ -1,4 +1,4 @@
-import {Link} from 'react-router'
+
 import Cookies from 'js-cookie'
 import {useNavigate} from 'react-router'
 
@@ -20,15 +20,16 @@ import './index.css'
     };
     
     const onClickLogout = () => {
-    Cookies.remove('jwt_token')
-    navigate('/login', {replace: true})
-  }
+        Cookies.remove('jwt_token')
+        navigate('/login', {replace: true})
+    }
+    
     return(
 
         <div className='entire-home-page'>
             <div className='navbar'>
                 <div>
-                    <img className='nav-logo' src='https://assets.ccbp.in/frontend/react-js/logo-img.png'>
+                    <img onClick={gotoHome} className='nav-logo' src='https://assets.ccbp.in/frontend/react-js/logo-img.png'>
                     </img>
                 </div>
                 
