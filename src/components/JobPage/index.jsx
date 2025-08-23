@@ -2,9 +2,9 @@ import './index.css';
 import NavBar from '../NavBar';
 import JobItem from '../JobItem';
 import Cookies from 'js-cookie';
-import { use, useState } from 'react';
+import { useState } from 'react';
 import { useEffect } from 'react';
-import { ThreeDots } from 'react-loader-spinner';
+import { PuffLoader } from 'react-spinners';
 
 
 
@@ -232,7 +232,7 @@ const JobPage = () => {
                     </div>
                     <div className='job-list'>
                         {isLoading ? (
-                        <div className="loading"><ThreeDots height="20" width="20" color="#ffffff"/></div>
+                        <div className="loading"><PuffLoader height="20" width="20" color="#ffffff"/></div>
                     ) : (
                         listOrNot()
                     )}
