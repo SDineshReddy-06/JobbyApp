@@ -1,7 +1,7 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
 
 import './App.css'
-import LoginPage from './components/loginPage'
+import LoginPage from './components/LoginPage'
 import NavBar from './components/NavBar'
 import HomePage from './components/HomePage'
 import ProtectedRoute from './components/ProtectedRoute'
