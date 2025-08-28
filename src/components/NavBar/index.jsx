@@ -28,9 +28,10 @@ import './index.css'
 
         <div className='entire-home-page'>
             <div className='navbar'>
-                <div>
-                    <img onClick={gotoHome} className='nav-logo' src='https://assets.ccbp.in/frontend/react-js/logo-img.png'>
-                    </img>
+                <div className='logo-container'>
+                    <h1 onClick={gotoHome} className='nav-logo'>
+                        CareerHub
+                    </h1>
                 </div>
                 
                     <div className='nav-links'>

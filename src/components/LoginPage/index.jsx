@@ -44,11 +44,9 @@ const LoginPage = () => {
         <div className='entire-login-page'>
             <div className="login-form-container">
           <form className="form-container" onSubmit={onSubmitForm}>
-            <img
-                src="https://assets.ccbp.in/frontend/react-js/logo-img.png"
-                className="login-website-logo-mobile-img"
-                alt="website logo"
-            />
+            <h1 className="login-website-logo-mobile-img">CareerHub</h1>
+                
+                
             <div className="input-container" >
                 <p>Username</p>
                 <input value={username} onChange={onChangeUsername} placeholder='Username'></input>

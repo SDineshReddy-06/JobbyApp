@@ -12,9 +12,13 @@
 
 .nav-logo{
     width: 150px;
-    height: 50px;
+    margin-bottom: 100px;
+    background: transparent;
     margin-left: 50px;
     cursor: pointer;
+    font-size: 40px;
+    align-self: center;
+    margin-top: 100px;
 }
 .navbar{
     display: flex;
@@ -23,6 +27,9 @@
     background-color: black;
     justify-self: flex-start;
     position: relative;
+    overflow: hidden;
+    max-height: 90px;
+
 
 }
 .nav-links{
@@ -52,4 +59,10 @@
 a{
     color: white;
     cursor: pointer;
+}
+.logo-container{
+    display: flex;
+    align-self: center;
+    justify-content: start;
+    height: 100px;
 }
